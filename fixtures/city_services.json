@@ -1,0 +1,177 @@
+{
+  "note": "全部供应商与编号均为虚构；报价币种混合（国际航班 AED，境内服务 CNY），用于多币种编排演示",
+  "city": "重庆",
+  "timezone": "Asia/Shanghai",
+  "airport": {"code": "CKG", "name": {"zh": "重庆江北国际机场", "ar": "مطار تشونغتشينغ جيانغبى الدولى", "en": "Chongqing Jiangbei Int'l Airport"}},
+  "services": [
+    {
+      "service_id": "FLT-GF-814", "category": "flight", "supplier_id": "SUP-AIR-GF",
+      "supplier_name": {"zh": "海湾隼航空（虚构）", "ar": "طيران صقر الخليج (وهمي)", "en": "Gulf Falcon Air (fictional)"},
+      "name": {"zh": "DXB→CKG 去程航班", "ar": "رحلة الذهاب دبي→تشونغتشينغ", "en": "Outbound flight DXB→CKG"},
+      "origin": "DXB", "destination": "CKG",
+      "departs_at": "2026-10-14T09:20:00+04:00", "arrives_at": "2026-10-14T21:05:00+08:00",
+      "features": ["halal_meal", "wheelchair_assist", "arabic_crew", "bassinet_seats"],
+      "seats_available": 20,
+      "price": {"currency": "AED", "amount": 2850, "unit": "seat"},
+      "cancel_reason_supported": ["carrier_cancel", "delay"]
+    },
+    {
+      "service_id": "FLT-GF-815", "category": "flight", "supplier_id": "SUP-AIR-GF",
+      "supplier_name": {"zh": "海湾隼航空（虚构）", "ar": "طيران صقر الخليج (وهمي)", "en": "Gulf Falcon Air (fictional)"},
+      "name": {"zh": "CKG→DXB 返程航班", "ar": "رحلة العودة تشونغتشينغ→دبي", "en": "Return flight CKG→DXB"},
+      "origin": "CKG", "destination": "DXB",
+      "departs_at": "2026-10-19T11:20:00+08:00", "arrives_at": "2026-10-19T15:05:00+04:00",
+      "features": ["halal_meal", "wheelchair_assist", "arabic_crew"],
+      "seats_available": 20,
+      "price": {"currency": "AED", "amount": 2620, "unit": "seat"}
+    },
+    {
+      "service_id": "FLT-SW-402", "category": "flight", "supplier_id": "SUP-AIR-SW",
+      "supplier_name": {"zh": "丝路翼航空（虚构）", "ar": "أجنحة طريق الحرير (وهمي)", "en": "Silk Wing Air (fictional)"},
+      "name": {"zh": "DXB→CKG 替代去程航班", "ar": "رحلة ذهاب بديلة دبي→تشونغتشينغ", "en": "Alternative outbound flight DXB→CKG"},
+      "origin": "DXB", "destination": "CKG",
+      "departs_at": "2026-10-14T10:05:00+04:00", "arrives_at": "2026-10-14T22:40:00+08:00",
+      "features": ["halal_meal"],
+      "seats_available": 12,
+      "price": {"currency": "AED", "amount": 2410, "unit": "seat"}
+    },
+    {
+      "service_id": "HTL-JL-01", "category": "hotel", "supplier_id": "SUP-HTL-JL",
+      "supplier_name": {"zh": "重庆江岚清真友好酒店（虚构）", "ar": "فندق جيانغ لان الصديق للحلال (وهمي)", "en": "Jianglan Halal-Friendly Hotel (fictional)"},
+      "name": {"zh": "江岚酒店家庭与无障碍房", "ar": "غرف عائلية ومهيأة بفندق جيانغ لان", "en": "Family & accessible rooms, Jianglan Hotel"},
+      "features": ["halal_breakfast_certified", "step_free_common_area", "step_free_route", "late_halal_box", "arabic_signage"],
+      "room_types": [
+        {"room_type": "family-suite", "inventory": 4, "occupancy": 4, "price": {"currency": "CNY", "amount": 1280, "unit": "room/night"}, "features": ["family_suite"]},
+        {"room_type": "twin-room", "inventory": 6, "occupancy": 2, "price": {"currency": "CNY", "amount": 680, "unit": "room/night"}, "features": []},
+        {"room_type": "accessible-room", "inventory": 3, "occupancy": 2, "price": {"currency": "CNY", "amount": 880, "unit": "room/night"}, "features": ["roll_in_shower", "grab_bars", "step_free_route", "wheelchair_turning_space"]}
+      ]
+    },
+    {
+      "service_id": "HTL-RJ-03", "category": "hotel", "supplier_id": "SUP-HTL-RJ",
+      "supplier_name": {"zh": "融景Halal服务公寓（虚构）", "ar": "شقق رونغ جينغ المخدومة للحلال (وهمي)", "en": "Rongjing Halal Residences (fictional)"},
+      "name": {"zh": "融景服务公寓家庭与无障碍房", "ar": "شقق عائلية ومهيأة برونغ جينغ", "en": "Family & accessible rooms, Rongjing Residences"},
+      "features": ["halal_breakfast_certified", "step_free_common_area", "step_free_route", "late_halal_box"],
+      "room_types": [
+        {"room_type": "family-suite", "inventory": 2, "occupancy": 4, "price": {"currency": "CNY", "amount": 1190, "unit": "room/night"}, "features": ["family_suite"]},
+        {"room_type": "twin-room", "inventory": 5, "occupancy": 2, "price": {"currency": "CNY", "amount": 640, "unit": "room/night"}, "features": []},
+        {"room_type": "accessible-room", "inventory": 2, "occupancy": 2, "price": {"currency": "CNY", "amount": 860, "unit": "room/night"}, "features": ["roll_in_shower", "grab_bars", "step_free_route"]}
+      ]
+    },
+    {
+      "service_id": "HTL-YD-02", "category": "hotel", "supplier_id": "SUP-HTL-YD",
+      "supplier_name": {"zh": "云东商务酒店（虚构）", "ar": "فندق يون دونغ للأعمال (وهمي)", "en": "Yundong Business Hotel (fictional)"},
+      "name": {"zh": "云东商务酒店客房", "ar": "غرف فندق يون دونغ", "en": "Rooms, Yundong Business Hotel"},
+      "features": [],
+      "room_types": [
+        {"room_type": "family-suite", "inventory": 3, "occupancy": 3, "price": {"currency": "CNY", "amount": 760, "unit": "room/night"}, "features": []},
+        {"room_type": "twin-room", "inventory": 8, "occupancy": 2, "price": {"currency": "CNY", "amount": 420, "unit": "room/night"}, "features": []}
+      ]
+    },
+    {
+      "service_id": "VAN-TR-01", "category": "vehicle", "supplier_id": "SUP-VAN-TR",
+      "supplier_name": {"zh": "坦途无障碍包车（虚构）", "ar": "تانتو للنقل المؤجر المهيأ (وهمي)", "en": "Tantu Accessible Charter (fictional)"},
+      "name": {"zh": "9座带升降踏板包车", "ar": "حافلة مؤجرة ٩ مقاعد بمصعد كرسي متحرك", "en": "9-seater charter coach with wheelchair lift"},
+      "features": ["wheelchair_lift", "step_free_entry", "halal_friendly_driver", "airport_pickup_sign_arabic"],
+      "capacity": 9,
+      "charter_scope": "team",
+      "price": {"currency": "CNY", "amount": 1800, "unit": "day"}
+    },
+    {
+      "service_id": "VAN-TR-02", "category": "vehicle", "supplier_id": "SUP-VAN-YX",
+      "supplier_name": {"zh": "悦行7座商务车（虚构）", "ar": "يويه شينغ ٧ مقاعد (وهمي)", "en": "Yuexing 7-seater MPV (fictional)"},
+      "name": {"zh": "7座商务包车", "ar": "سيارة أعمال مؤجرة ٧ مقاعد", "en": "7-seater MPV charter"},
+      "features": ["halal_friendly_driver"],
+      "capacity": 7,
+      "charter_scope": "team",
+      "price": {"currency": "CNY", "amount": 1100, "unit": "day"}
+    },
+    {
+      "service_id": "RST-HL-01", "category": "restaurant", "supplier_id": "SUP-RST-QL",
+      "supplier_name": {"zh": "祁连山清真餐厅（虚构）", "ar": "مطعم تشيليان شان الحلال (وهمي)", "en": "Qilianshan Halal Restaurant (fictional)"},
+      "name": {"zh": "祁连山清真餐厅包间", "ar": "غرفة خاصة بمطعم تشيليان شان الحلال", "en": "Private room, Qilianshan Halal Restaurant"},
+      "features": ["halal_certified", "private_room", "step_free_entry", "arabic_menu"],
+      "last_order_local": "22:30",
+      "seats_available": 30,
+      "price": {"currency": "CNY", "amount": 168, "unit": "meal/pax"}
+    },
+    {
+      "service_id": "RST-HL-02", "category": "restaurant", "supplier_id": "SUP-RST-XJ",
+      "supplier_name": {"zh": "新月清真食府（虚构）", "ar": "مطعم الهلال الحلال (وهمي)", "en": "Crescent Halal Dining (fictional)"},
+      "name": {"zh": "新月清真食府", "ar": "مطعم الهلال الحلال", "en": "Crescent Halal Dining"},
+      "features": ["halal_certified", "step_free_entry"],
+      "last_order_local": "23:30",
+      "seats_available": 40,
+      "price": {"currency": "CNY", "amount": 138, "unit": "meal/pax"}
+    },
+    {
+      "service_id": "RST-SC-09", "category": "restaurant", "supplier_id": "SUP-RST-SC",
+      "supplier_name": {"zh": "蜀厨川菜馆（虚构）", "ar": "مطعم سيتشوان (وهمي)", "en": "Shuchu Sichuan Kitchen (fictional)"},
+      "name": {"zh": "蜀厨川菜馆", "ar": "مطعم سيتشوان", "en": "Shuchu Sichuan Kitchen"},
+      "features": ["private_room"],
+      "last_order_local": "21:00",
+      "seats_available": 50,
+      "price": {"currency": "CNY", "amount": 120, "unit": "meal/pax"}
+    },
+    {
+      "service_id": "ATT-HYD-01", "category": "attraction", "supplier_id": "SUP-ATT-CQ",
+      "supplier_name": {"zh": "重庆文旅服务平台（虚构）", "ar": "منصة خدمات السياحة بتشونغتشينغ (وهمية)", "en": "Chongqing Tourism Desk (fictional)"},
+      "name": {"zh": "洪崖洞民俗风貌区", "ar": "منطقة هونغ يادونغ التراثية", "en": "Hongyadong Heritage Quarter"},
+      "features": ["step_free_route", "elevator_access", "halal_food_nearby"],
+      "price": {"currency": "CNY", "amount": 0, "unit": "visit"},
+      "window": {"open_local": "10:00", "close_local": "22:00"}
+    },
+    {
+      "service_id": "ATT-DZ-01", "category": "attraction", "supplier_id": "SUP-ATT-DZ",
+      "supplier_name": {"zh": "大足石刻游客中心（虚构）", "ar": "مركز زوار منحوتات دازو (وهمي)", "en": "Dazu Rock Carvings Visitor Centre (fictional)"},
+      "name": {"zh": "大足石刻无障碍游览线", "ar": "مسار زيارة مهيأ لمنحوتات دازو الصخرية", "en": "Dazu Rock Carvings accessible route"},
+      "features": ["accessible_path", "wheelchair_loan", "step_free_route"],
+      "price": {"currency": "CNY", "amount": 115, "unit": "ticket/pax"},
+      "window": {"open_local": "08:30", "close_local": "17:00"}
+    },
+    {
+      "service_id": "ATT-CQK-01", "category": "attraction", "supplier_id": "SUP-ATT-CQ",
+      "supplier_name": {"zh": "重庆文旅服务平台（虚构）", "ar": "منصة خدمات السياحة بتشونغتشينغ (وهمية)", "en": "Chongqing Tourism Desk (fictional)"},
+      "name": {"zh": "磁器口古镇", "ar": "بلدة تسيتشيكو القديمة", "en": "Ciqikou Ancient Town"},
+      "features": ["step_free_partial", "halal_food_nearby"],
+      "price": {"currency": "CNY", "amount": 0, "unit": "visit"},
+      "window": {"open_local": "09:00", "close_local": "21:30"}
+    },
+    {
+      "service_id": "ATT-CABLE-01", "category": "attraction", "supplier_id": "SUP-ATT-CQ",
+      "supplier_name": {"zh": "重庆文旅服务平台（虚构）", "ar": "منصة خدمات السياحة بتشونغتشينغ (وهمية)", "en": "Chongqing Tourism Desk (fictional)"},
+      "name": {"zh": "长江索道", "ar": "تلفريك نهر اليانغتسي", "en": "Yangtze River Cableway"},
+      "features": [],
+      "price": {"currency": "CNY", "amount": 30, "unit": "ticket/pax"},
+      "window": {"open_local": "09:30", "close_local": "21:00"}
+    },
+    {
+      "service_id": "ATT-CRUISE-01", "category": "attraction", "supplier_id": "SUP-ATT-LJ",
+      "supplier_name": {"zh": "两江无障碍游船（虚构）", "ar": "رحلة نهرية مهيأة على النهرين (وهمية)", "en": "Two-River Accessible Cruise (fictional)"},
+      "name": {"zh": "两江夜游无障碍游船", "ar": "رحلة ليلية مهيأة على النهرين", "en": "Two-River night cruise (accessible)"},
+      "features": ["step_free_route", "wheelchair_deck", "halal_refreshment"],
+      "price": {"currency": "CNY", "amount": 138, "unit": "ticket/pax"},
+      "window": {"open_local": "18:30", "close_local": "21:30"}
+    },
+    {
+      "service_id": "STF-GD-01", "category": "local_staff", "supplier_id": "SUP-GUIDE-AR",
+      "supplier_name": {"zh": "海湾客阿拉伯语服务社（虚构）", "ar": "خدمة الضيوف الخليجيين للعربية (وهمية)", "en": "Gulf Guest Arabic Service House (fictional)"},
+      "name": {"zh": "阿拉伯语/英语女向导", "ar": "مرشدة عربية/إنجليزية", "en": "Arabic/English female guide"},
+      "features": ["language:ar", "language:en", "language:zh", "female_guide", "gulf_culture_trained", "first_aid"],
+      "price": {"currency": "CNY", "amount": 900, "unit": "day"}
+    },
+    {
+      "service_id": "SVC-MEET-01", "category": "local_service", "supplier_id": "SUP-MEET-CKG",
+      "supplier_name": {"zh": "江北机场礼宾协助（虚构）", "ar": "خدمة الاستقبال بمطار جيانغبى (وهمية)", "en": "Jiangbei Airport Meet & Assist (fictional)"},
+      "name": {"zh": "CKG 入境无障碍接机协助", "ar": "استقبال ومساعدة دخول مهيأ بمطار تشونغتشينغ", "en": "CKG accessible arrival meet & assist"},
+      "features": ["arabic_speaker", "wheelchair_assist", "fast_track_border"],
+      "price": {"currency": "CNY", "amount": 480, "unit": "service/team"}
+    },
+    {
+      "service_id": "SVC-HALALBOX", "category": "local_service", "supplier_id": "SUP-HTL-JL",
+      "supplier_name": {"zh": "重庆江岚清真友好酒店（虚构）", "ar": "فندق جيانغ لان الصديق للحلال (وهمي)", "en": "Jianglan Halal-Friendly Hotel (fictional)"},
+      "name": {"zh": "深夜清真餐盒", "ar": "علبة طعام حلال ليلية", "en": "Late halal meal box"},
+      "features": ["halal_certified", "late_night"],
+      "price": {"currency": "CNY", "amount": 68, "unit": "box/pax"}
+    }
+  ]
+}

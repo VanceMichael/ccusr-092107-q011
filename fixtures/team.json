@@ -1,0 +1,49 @@
+{
+  "team_id": "team-cq-2026-1008",
+  "domain": "gulf-inbound-travel",
+  "source_market": "AE",
+  "source_timezone": "Asia/Dubai",
+  "destination_city": "重庆",
+  "destination_timezone": "Asia/Shanghai",
+  "languages": ["ar", "en", "zh"],
+  "head_member_id": "m-01",
+  "preferences": {
+    "diet": "halal_required",
+    "rooming": "family_locked",
+    "vehicle": "private_charter",
+    "guide_languages": ["ar", "en"],
+    "guide_gender_preference": "female",
+    "accessibility": ["step_free_route", "wheelchair_lift_vehicle"]
+  },
+  "members": [
+    {"member_id": "m-01", "token_ref": "T-9021", "family_unit": "fam-A", "age_band": "adult", "diet": "halal", "kinship_to_head": "self", "kinship_label": {"zh": "父亲（团长）", "ar": "الأب (رب الأسرة)", "en": "Father (head)"}, "accessibility": []},
+    {"member_id": "m-02", "token_ref": "T-9022", "family_unit": "fam-A", "age_band": "adult", "diet": "halal", "kinship_to_head": "spouse", "kinship_label": {"zh": "母亲", "ar": "الأم", "en": "Mother"}, "accessibility": []},
+    {"member_id": "m-03", "token_ref": "T-9023", "family_unit": "fam-B", "age_band": "adult", "diet": "halal", "kinship_to_head": "son", "kinship_label": {"zh": "长子", "ar": "الابن الأكبر", "en": "Eldest son"}, "accessibility": []},
+    {"member_id": "m-04", "token_ref": "T-9024", "family_unit": "fam-B", "age_band": "adult", "diet": "halal", "kinship_to_head": "daughter", "kinship_label": {"zh": "长女", "ar": "الابنة الكبرى", "en": "Eldest daughter"}, "accessibility": []},
+    {"member_id": "m-05", "token_ref": "T-9025", "family_unit": "fam-A", "age_band": "child", "diet": "halal", "kinship_to_head": "son", "kinship_label": {"zh": "幼子", "ar": "الابن الأصغر", "en": "Younger son"}, "accessibility": []},
+    {"member_id": "m-06", "token_ref": "T-9026", "family_unit": "fam-A", "age_band": "child", "diet": "halal", "kinship_to_head": "daughter", "kinship_label": {"zh": "幼女", "ar": "الابنة الصغرى", "en": "Younger daughter"}, "accessibility": []},
+    {"member_id": "m-07", "token_ref": "T-9027", "family_unit": "fam-C", "age_band": "senior", "diet": "halal", "kinship_to_head": "mother", "kinship_label": {"zh": "祖母", "ar": "الجدة", "en": "Grandmother"}, "accessibility": ["wheelchair"]},
+    {"member_id": "m-08", "token_ref": "T-9028", "family_unit": "fam-C", "age_band": "senior", "diet": "halal", "kinship_to_head": "father", "kinship_label": {"zh": "祖父", "ar": "الجد", "en": "Grandfather"}, "accessibility": []}
+  ],
+  "kinship_edges": [
+    {"from": "m-01", "to": "m-02", "relation": "spouse"},
+    {"from": "m-01", "to": "m-03", "relation": "parent_of"},
+    {"from": "m-01", "to": "m-04", "relation": "parent_of"},
+    {"from": "m-01", "to": "m-05", "relation": "parent_of"},
+    {"from": "m-01", "to": "m-06", "relation": "parent_of"},
+    {"from": "m-07", "to": "m-01", "relation": "parent_of"},
+    {"from": "m-08", "to": "m-01", "relation": "parent_of"},
+    {"from": "m-07", "to": "m-08", "relation": "spouse"}
+  ],
+  "rooming_request": [
+    {"unit_id": "fam-A", "room_type": "family-suite", "occupants": ["m-01", "m-02", "m-05", "m-06"], "requirements": ["halal_breakfast_certified", "step_free_common_area"]},
+    {"unit_id": "fam-B", "room_type": "twin-room", "occupants": ["m-03", "m-04"], "requirements": ["halal_breakfast_certified"]},
+    {"unit_id": "fam-C", "room_type": "accessible-room", "occupants": ["m-07", "m-08"], "requirements": ["halal_breakfast_certified", "roll_in_shower", "grab_bars", "step_free_route"]}
+  ],
+  "vehicle_request": {
+    "scope": "team",
+    "charter": true,
+    "min_capacity": 8,
+    "requirements": ["wheelchair_lift", "step_free_entry", "halal_friendly_driver"]
+  }
+}

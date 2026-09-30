@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "多币种汇率表",
+  "type": "object",
+  "required": ["base_currency", "rates"],
+  "properties": {
+    "base_currency": {"type": "string", "minLength": 3},
+    "as_of": {"type": "string"},
+    "note": {"type": "string"},
+    "rates": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {"type": "number", "exclusiveMinimum": 0}
+    }
+  },
+  "additionalProperties": false
+}

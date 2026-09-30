@@ -1,0 +1,45 @@
+{
+  "deposit_policy": {
+    "deposit_pct": 30,
+    "deposit_currency": "AED",
+    "note": "定金以统一币种 AED 收取（客人本币），各服务金额按付款日汇率折算；尾款可按 CNY 或 AED 结算",
+    "balance_currencies": ["CNY", "AED"]
+  },
+  "cancellation_policy": {
+    "cross_border": true,
+    "tiers": [
+      {"before_days": 30, "supplier_keeps_pct": 10, "refund_pct": 90},
+      {"before_days": 14, "supplier_keeps_pct": 40, "refund_pct": 60},
+      {"before_days": 7,  "supplier_keeps_pct": 70, "refund_pct": 30},
+      {"before_days": 0,  "supplier_keeps_pct": 100, "refund_pct": 0}
+    ],
+    "refund_currency_rule": "payback_in_deposit_currency",
+    "note": "退款一律按收款币种 AED 退回，取原付款汇率；航班类按承运人规则（承运人取消全额退）",
+    "carrier_fault_refund_pct": 100
+  },
+  "delay_policy": {
+    "meet_adjustment_minutes": 90,
+    "note": "航班延误超过 90 分钟自动顺延接机与首日活动；在同一时区内的活动以当地时间重排",
+    "restaurant_last_order_buffer_minutes": 45
+  },
+  "stages": [
+    {"code": "inquiry", "name": {"zh": "咨询", "ar": "استفسار", "en": "Inquiry"}},
+    {"code": "confirmed", "name": {"zh": "确认", "ar": "تأكيد", "en": "Confirmed"}},
+    {"code": "inbound", "name": {"zh": "入境", "ar": "دخول", "en": "Inbound"}},
+    {"code": "in_destination", "name": {"zh": "消费", "ar": "الاستهلاك", "en": "In-destination"}},
+    {"code": "revisit", "name": {"zh": "复访", "ar": "زيارة مجددة", "en": "Revisit"}}
+  ],
+  "minimum_disclosure": {
+    "note": "合作方最小信息披露：按服务类别只下发必需字段，使用令牌引用，禁止真实证件号、家庭关系与非必要成员信息",
+    "by_category": {
+      "flight":       {"receive": ["token_ref", "doc_type", "issuing_country", "demo_hash", "masked_name"], "forbid": ["kinship", "roommate", "diet_other_members"]},
+      "hotel":        {"receive": ["token_ref", "rooming_unit", "counts_only_outside_unit", "accessibility_need", "diet_cert"], "forbid": ["doc_number", "kinship", "other_units_occupants"]},
+      "vehicle":      {"receive": ["pax_count", "wheelchair_count", "pickup_window", "language_sign"], "forbid": ["token_ref", "doc_number", "kinship", "guest_names"]},
+      "restaurant":   {"receive": ["pax_count", "diet", "private_room", "accessibility_need", "arrival_window"], "forbid": ["token_ref", "doc_number", "kinship", "guest_names"]},
+      "attraction":   {"receive": ["pax_count", "wheelchair_count", "visit_window"], "forbid": ["token_ref", "doc_number", "kinship", "guest_names"]},
+      "local_staff":  {"receive": ["pax_count", "family_brief", "accessibility_need", "language", "diet"], "forbid": ["doc_number", "token_hash"]},
+      "local_service":{"receive": ["pax_count", "wheelchair_count", "language_sign", "arrival_window"], "forbid": ["doc_number", "kinship", "guest_names"]}
+    },
+    "pseudonym": {"guest_prefix": "GUEST-", "rooming_prefix": "ROOM-UNIT-"}
+  }
+}
