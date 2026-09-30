@@ -1,0 +1,158 @@
+{
+  "team_id": "TEAM-DXB-CKG-008",
+  "home_city": "迪拜",
+  "home_timezone": "Asia/Dubai",
+  "destination": "重庆",
+  "destination_timezone": "Asia/Shanghai",
+  "head_id": "M-01",
+  "members": [
+    {
+      "member_id": "M-01",
+      "member_code": "G-01",
+      "token": {
+        "token_id": "TOK-A-0001",
+        "kind": "passport_visa",
+        "masked_ref": "P****2471",
+        "issuer": "gulf-gateway",
+        "issued_at": "2026-09-01T09:00:00+04:00",
+        "expires_at": "2027-03-01T00:00:00+04:00",
+        "status": "active"
+      },
+      "age_band": "adult",
+      "diets": ["halal"],
+      "languages": ["ar", "en"],
+      "access_needs": []
+    },
+    {
+      "member_id": "M-02",
+      "member_code": "G-02",
+      "token": {
+        "token_id": "TOK-A-0002",
+        "kind": "passport_visa",
+        "masked_ref": "P****8830",
+        "issuer": "gulf-gateway",
+        "issued_at": "2026-09-01T09:05:00+04:00",
+        "expires_at": "2027-03-01T00:00:00+04:00",
+        "status": "active"
+      },
+      "age_band": "adult",
+      "diets": ["halal"],
+      "languages": ["ar"],
+      "access_needs": []
+    },
+    {
+      "member_id": "M-03",
+      "member_code": "G-03",
+      "token": {
+        "token_id": "TOK-A-0003",
+        "kind": "passport_visa",
+        "masked_ref": "P****1052",
+        "issuer": "gulf-gateway",
+        "issued_at": "2026-09-01T09:10:00+04:00",
+        "expires_at": "2027-03-01T00:00:00+04:00",
+        "status": "active"
+      },
+      "age_band": "child",
+      "diets": ["halal"],
+      "languages": ["ar"],
+      "access_needs": ["child_seat"]
+    },
+    {
+      "member_id": "M-04",
+      "member_code": "G-04",
+      "token": {
+        "token_id": "TOK-A-0004",
+        "kind": "passport_visa",
+        "masked_ref": "P****6694",
+        "issuer": "gulf-gateway",
+        "issued_at": "2026-09-01T09:15:00+04:00",
+        "expires_at": "2027-03-01T00:00:00+04:00",
+        "status": "active"
+      },
+      "age_band": "child",
+      "diets": ["halal"],
+      "languages": ["ar"],
+      "access_needs": ["child_seat"]
+    },
+    {
+      "member_id": "M-05",
+      "member_code": "G-05",
+      "token": {
+        "token_id": "TOK-A-0005",
+        "kind": "passport_visa",
+        "masked_ref": "P****3317",
+        "issuer": "gulf-gateway",
+        "issued_at": "2026-09-01T09:20:00+04:00",
+        "expires_at": "2027-03-01T00:00:00+04:00",
+        "status": "active"
+      },
+      "age_band": "child",
+      "diets": ["halal"],
+      "languages": ["ar"],
+      "access_needs": ["child_seat"]
+    },
+    {
+      "member_id": "M-06",
+      "member_code": "G-06",
+      "token": {
+        "token_id": "TOK-A-0006",
+        "kind": "passport_visa",
+        "masked_ref": "P****7128",
+        "issuer": "gulf-gateway",
+        "issued_at": "2026-09-01T09:25:00+04:00",
+        "expires_at": "2027-03-01T00:00:00+04:00",
+        "status": "active"
+      },
+      "age_band": "adult",
+      "diets": ["halal", "vegetarian"],
+      "languages": ["ar"],
+      "access_needs": ["wheelchair", "ground_floor"]
+    },
+    {
+      "member_id": "M-07",
+      "member_code": "G-07",
+      "token": {
+        "token_id": "TOK-A-0007",
+        "kind": "passport_visa",
+        "masked_ref": "P****4560",
+        "issuer": "gulf-gateway",
+        "issued_at": "2026-09-01T09:30:00+04:00",
+        "expires_at": "2027-03-01T00:00:00+04:00",
+        "status": "active"
+      },
+      "age_band": "infant",
+      "diets": ["halal"],
+      "languages": [],
+      "access_needs": ["child_seat", "baby_crib"]
+    },
+    {
+      "member_id": "M-08",
+      "member_code": "G-08",
+      "token": {
+        "token_id": "TOK-A-0008",
+        "kind": "passport_visa",
+        "masked_ref": "P****9902",
+        "issuer": "gulf-gateway",
+        "issued_at": "2026-09-01T09:35:00+04:00",
+        "expires_at": "2027-03-01T00:00:00+04:00",
+        "status": "active"
+      },
+      "age_band": "adult",
+      "diets": ["halal"],
+      "languages": ["ar", "en"],
+      "access_needs": []
+    }
+  ],
+  "relations": [
+    {"a": "M-01", "b": "M-02", "role": "spouse"},
+    {"a": "M-01", "b": "M-03", "role": "parent"},
+    {"a": "M-01", "b": "M-04", "role": "parent"},
+    {"a": "M-02", "b": "M-03", "role": "parent"},
+    {"a": "M-02", "b": "M-04", "role": "parent"},
+    {"a": "M-02", "b": "M-05", "role": "parent"},
+    {"a": "M-01", "b": "M-07", "role": "parent"},
+    {"a": "M-02", "b": "M-07", "role": "parent"},
+    {"a": "M-01", "b": "M-06", "role": "child"},
+    {"a": "M-01", "b": "M-08", "role": "sibling"}
+  ]
+}

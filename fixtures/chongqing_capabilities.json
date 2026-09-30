@@ -1,0 +1,169 @@
+{
+  "city": "重庆",
+  "timezone": "Asia/Shanghai",
+  "options": [
+    {
+      "supplier_id": "SUP-AIR-01",
+      "service_ref": "DXB-CKG-319",
+      "kind": "flight_seat",
+      "city": "重庆",
+      "timezone": "Asia/Dubai",
+      "capacity": 12,
+      "capabilities": ["halal_kitchen", "arabic_staff", "english_staff", "refundable", "wheelchair_access"],
+      "display": {
+        "zh": "迪拜—重庆直飞航班（含清真餐）",
+        "ar": "رحلة مباشرة دبي - تشونغتشينغ (وجبة حلال)",
+        "en": "Direct flight Dubai - Chongqing (halal meal)"
+      },
+      "refundable": true,
+      "cross_border_cancel_deadline_h": 72
+    },
+    {
+      "supplier_id": "SUP-HTL-RIVER",
+      "service_ref": "FAMILY-SUITE-8P",
+      "kind": "hotel_room",
+      "city": "重庆",
+      "timezone": "Asia/Shanghai",
+      "capacity": 8,
+      "capabilities": [
+        "family_room", "adjoining_rooms", "halal_kitchen", "halal_certified",
+        "prayer_direction", "ramadan_service", "baby_crib", "wheelchair_access",
+        "ground_floor_access", "elevator", "arabic_staff", "english_staff",
+        "private_dining", "refundable"
+      ],
+      "display": {
+        "zh": "江景家庭套房（整户锁定·清真厨房·礼拜朝向）",
+        "ar": "جناح عائلي بإطلالة نهرية (حجز للعائلة كاملة·مطبخ حلال·اتجاه القبلة)",
+        "en": "River-view family suite (whole-family lock · halal kitchen · qibla)"
+      },
+      "refundable": true,
+      "cross_border_cancel_deadline_h": 48
+    },
+    {
+      "supplier_id": "SUP-HTL-JIALING",
+      "service_ref": "FAMILY-LOFT-8P",
+      "kind": "hotel_room",
+      "city": "重庆",
+      "timezone": "Asia/Shanghai",
+      "capacity": 9,
+      "capabilities": [
+        "family_room", "adjoining_rooms", "halal_kitchen", "halal_certified",
+        "prayer_direction", "ramadan_service", "baby_crib", "wheelchair_access",
+        "ground_floor_access", "elevator", "arabic_staff", "english_staff",
+        "private_dining", "refundable"
+      ],
+      "display": {
+        "zh": "嘉陵家庭复式房（备用·整户锁定）",
+        "ar": "لوفت عائلي على نهر جِيالينغ (بديل·حجز للعائلة كاملة)",
+        "en": "Jialing family loft (backup · whole-family lock)"
+      },
+      "refundable": true,
+      "cross_border_cancel_deadline_h": 48
+    },
+    {
+      "supplier_id": "SUP-VAN-01",
+      "service_ref": "MERCEDES-SPRINTER-9",
+      "kind": "charter_vehicle",
+      "city": "重庆",
+      "timezone": "Asia/Shanghai",
+      "capacity": 9,
+      "capabilities": [
+        "wheelchair_access", "child_seat", "large_luggage",
+        "airport_pickup", "cross_city_transfer", "english_staff", "arabic_staff"
+      ],
+      "display": {
+        "zh": "9座包车（轮椅可上·儿童座椅·接机）",
+        "ar": "حافلة صغيرة 9 مقاعد (مناسبة للكراسي المتحركة·مقعد أطفال·استقبال مطار)",
+        "en": "9-seat charter (wheelchair access · child seat · airport pickup)"
+      },
+      "refundable": false,
+      "cross_border_cancel_deadline_h": 24
+    },
+    {
+      "supplier_id": "SUP-VAN-02",
+      "service_ref": "MAXUS-G10-9",
+      "kind": "charter_vehicle",
+      "city": "重庆",
+      "timezone": "Asia/Shanghai",
+      "capacity": 10,
+      "capabilities": [
+        "wheelchair_access", "child_seat", "large_luggage",
+        "airport_pickup", "cross_city_transfer", "english_staff", "arabic_staff"
+      ],
+      "display": {
+        "zh": "10座包车（备用·阿语司机）",
+        "ar": "حافلة 10 مقاعد (بديل·سائق يتحدث العربية)",
+        "en": "10-seat charter (backup · Arabic-speaking driver)"
+      },
+      "refundable": false,
+      "cross_border_cancel_deadline_h": 24
+    },
+    {
+      "supplier_id": "SUP-ATTR-CABLEWAY",
+      "service_ref": "YANGTZE-CABLEWAY-FAMILY",
+      "kind": "attraction_slot",
+      "city": "重庆",
+      "timezone": "Asia/Shanghai",
+      "capacity": 8,
+      "capabilities": ["family_package", "private_slot", "wheelchair_access", "elevator", "refundable"],
+      "display": {
+        "zh": "长江索道家庭包舱",
+        "ar": "كابينة عائلية خاصة لتلفريك نهر اليانغتسي",
+        "en": "Yangtze River Cableway private family cabin"
+      },
+      "refundable": true,
+      "cross_border_cancel_deadline_h": 48
+    },
+    {
+      "supplier_id": "SUP-ATTR-DAZU",
+      "service_ref": "DAZU-CARVINGS-PRIVATE",
+      "kind": "attraction_slot",
+      "city": "重庆",
+      "timezone": "Asia/Shanghai",
+      "capacity": 20,
+      "capabilities": ["family_package", "private_slot", "english_staff", "refundable"],
+      "display": {
+        "zh": "大足石刻私家讲解场次",
+        "ar": "جولة خاصة بمرشد في منحوتات دازو الصخرية",
+        "en": "Dazu Rock Carvings private guided slot"
+      },
+      "refundable": true,
+      "cross_border_cancel_deadline_h": 72
+    },
+    {
+      "supplier_id": "SUP-GUIDE-AR-01",
+      "service_ref": "ARABIC-LEAD-GUIDE",
+      "kind": "local_staff",
+      "city": "重庆",
+      "timezone": "Asia/Shanghai",
+      "capacity": 12,
+      "capabilities": ["arabic_staff", "english_staff", "port_of_entry_support", "visa_letter"],
+      "display": {
+        "zh": "阿语主导游（含口岸入境协助）",
+        "ar": "مرشد رئيسي يتحدث العربية (يشمل المساعدة عند دخول الحدود)",
+        "en": "Lead Arabic-speaking guide (incl. port-of-entry support)"
+      },
+      "refundable": false,
+      "cross_border_cancel_deadline_h": 24
+    },
+    {
+      "supplier_id": "SUP-DINE-HALAL-01",
+      "service_ref": "PRIVATE-HALAL-DINING-8P",
+      "kind": "local_staff",
+      "city": "重庆",
+      "timezone": "Asia/Shanghai",
+      "capacity": 8,
+      "capabilities": [
+        "halal_kitchen", "halal_certified", "private_dining",
+        "prayer_direction", "arabic_staff", "english_staff"
+      ],
+      "display": {
+        "zh": "清真餐厅独立包间（全程用餐协调）",
+        "ar": "غرفة طعام خاصة في مطعم حلال (تنسيق الوجبات طوال الرحلة)",
+        "en": "Private halal dining room (meal coordination throughout)"
+      },
+      "refundable": true,
+      "cross_border_cancel_deadline_h": 48
+    }
+  ]
+}

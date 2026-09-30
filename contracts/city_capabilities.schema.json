@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "城市服务能力目录",
+  "type": "object",
+  "required": ["city", "timezone", "options"],
+  "properties": {
+    "city": {"type": "string", "minLength": 1},
+    "timezone": {"type": "string", "minLength": 1},
+    "options": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "supplier_id", "service_ref", "kind", "city", "timezone",
+          "capacity", "capabilities", "display"
+        ],
+        "properties": {
+          "supplier_id": {"type": "string", "minLength": 1},
+          "service_ref": {"type": "string", "minLength": 1},
+          "kind": {
+            "enum": [
+              "flight_seat", "hotel_room", "charter_vehicle",
+              "attraction_slot", "local_staff"
+            ]
+          },
+          "city": {"type": "string"},
+          "timezone": {"type": "string"},
+          "capacity": {"type": "integer", "minimum": 1},
+          "capabilities": {"type": "array", "items": {"type": "string"}},
+          "display": {
+            "type": "object",
+            "required": ["zh", "ar", "en"],
+            "properties": {
+              "zh": {"type": "string"},
+              "ar": {"type": "string"},
+              "en": {"type": "string"}
+            },
+            "additionalProperties": false
+          },
+          "refundable": {"type": "boolean"},
+          "cross_border_cancel_deadline_h": {"type": ["integer", "null"]}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
